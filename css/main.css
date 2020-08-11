@@ -1,0 +1,28 @@
+.card {
+    width: 30vh;
+    /* height: 45vh; */
+}
+
+.cabezera {
+    background: #f7c63b;
+}
+
+.menu-lateral {
+    height: 55vh;
+}
+
+.bottom-3 {
+    bottom: 3.2rem;
+    background: white;
+}
+
+.publicidad{
+    height: 30vh;
+}
+
+img{
+    width: 120px;
+}
+.card-img-top{
+    /* width: 9rem; */
+}
