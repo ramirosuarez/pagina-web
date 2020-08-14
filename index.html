@@ -8,6 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css">
 
   <title>Plantilla</title>
@@ -18,10 +20,23 @@
     <div class="container">
       <!-- primera parte de la cabezera -->
       <div class="row justify-content-around pt-4">
-        <div class="col-3 col-md-3">amazing</div>
-        <div class="col-3 col-md-3">my city:los angeles</div>
-        <div class="col-3 col-md-3">8 800 805 04 83</div>
         <div class="col-3 col-md-3">
+          <p class="h4 text-white">Amazing store</p>
+        </div>
+        <div class="col-3 col-md-3">
+
+          <p class="text-capitalize h6">
+            <i class=" material-icons tiny">add_location</i> my city:
+            <span class="text-secondary">los angeles</span>
+          </p>
+        </div>
+        <div class="col-3 col-md-3 h6">
+          <p>
+
+            <i class=" material-icons tiny">phone</i>
+            8 800 805-04-83 </p>
+        </div>
+        <div class="col-3 col-md-3 h6">
           <div class="row justify-content-between">
             <a href="">shipping </a>
             <a href="">blog</a>
@@ -33,14 +48,16 @@
       <!-- Segunda parte de la cabezera
        -->
       <div class="row justify-content-between py-3 clearfix ">
-        <div class="col-md-7 offset-3 pr-0 mr-0">
+        <div class="col-md-7 offset-3 pr-0 mr-0 ">
           <div class="row">
             <div class=" float-left input-group md-form form-sm form-1 pl-0 ">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-text1"><i class="fas fa-search text-white"
-                    aria-hidden="true"></i></span>
+                <span class="input-group-text bg-white border-0 rounded-0">
+                  <i class="material-icons tiny" aria-hidden="true">search</i>
+                </span>
               </div>
-              <input class="form-control my-0 py-1 " type="text" placeholder="Search" aria-label="Search">
+              <input class="form-control my-0 py-1 p-0 border-0 rounded-0" type="text" placeholder="Search"
+                aria-label="Search">
             </div>
 
           </div>
@@ -60,9 +77,50 @@
       <div class="row ">
         <section class="col-3 col-md-3 ">
           <div class="row rows-cols-1 col-md-12 p-0 m-0  bottom-3 ">
-            <div class="col-md-12 menu-lateral border">dfdfdf</div>
+            <div class="col-md-12 menu-lateral border">
+              <!-- menu de navegacion lateral  -->
+              <nav id="sidebar">
+
+                <ul class="list-unstyled components">
+                  <p class="text-uppercase text-secondary pt-2 h6 titulo-categoria"> all categories</p>
+                  <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class=" h6">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                      </li>
+                      <li>
+                        <a class="text-secondary" href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                      class="h6">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <li>
+                        <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+
+                </ul>
+
+              </nav>
+              <!-- Termina el menu de navegacion lateral -->
+            </div>
             <div class="col-md-12 cards border mt-2 publicidad">
-              <p class="pt-3">sdsdsd</p> fdfdfdf</div>
+              <p class="pt-3">sdsdsd</p> fdfdfdf
+            </div>
           </div>
         </section>
 
@@ -174,6 +232,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/uno.js"></script> -->
 </body>
 
 </html>|
